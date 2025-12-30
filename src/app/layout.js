@@ -5,8 +5,11 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: '--font-playfa
 const merriweather = Merriweather({ weight: ['300', '400', '700'], subsets: ["latin"], variable: '--font-merriweather' });
 
 export const metadata = {
-  title: "Echo Chambers",
-  description: "See the full picture. Compare news from every angle.",
+  title: 'Echo Chambers',
+  description: 'Break out of your bubble.',
+  icons: {
+    icon: '/icon.jpg',
+  },
 };
 
 export default function RootLayout({ children }) {
