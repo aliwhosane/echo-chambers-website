@@ -1,0 +1,51 @@
+.header {
+    border-bottom: 3px double var(--border);
+    background-color: var(--background);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.date {
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--inactive);
+}
+
+.logo {
+    font-family: var(--font-playfair);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--header-text);
+    text-align: center;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.downloadButton {
+    justify-self: end;
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-merriweather);
+    transition: all 0.2s;
+}
+
+.downloadButton:hover {
+    background-color: var(--text);
+    color: var(--background);
+}
