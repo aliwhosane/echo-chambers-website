@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { Playfair_Display, Merriweather } from "next/font/google";
 import "./globals.css";
 
@@ -15,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${merriweather.variable} ${merriweather.className}`}>{children}</body>
+      <body className={`${playfair.variable} ${merriweather.variable} ${merriweather.className}`}>
+        {children}
+        <GoogleAnalytics gaId="G-90FPZYHCHG" />
+      </body>
     </html>
   );
 }
